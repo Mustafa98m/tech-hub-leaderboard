@@ -458,15 +458,25 @@ code {
   .podium {
     flex-direction: column;
     gap: 1rem;
+    align-items: center;
   }
 
   .podium-position {
     width: 100%;
     max-width: 300px;
+    display: flex;
+    justify-content: center;
   }
 
   .podium-card {
-    width: 100%;
+    width: 280px;
+    max-width: 90vw;
+  }
+
+  .podium-card.winner {
+    width: 300px;
+    max-width: 90vw;
+    transform: scale(1.05);
   }
 
   .leaderboard-header h2 {
