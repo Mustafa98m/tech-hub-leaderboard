@@ -70,6 +70,18 @@ code {
   perspective: 1000px;
 }
 
+.podium-position.first {
+  order: 2;
+}
+
+.podium-position.second {
+  order: 1;
+}
+
+.podium-position.third {
+  order: 3;
+}
+
 .podium-position {
   display: flex;
   flex-direction: column;
@@ -459,6 +471,18 @@ code {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+  }
+
+  .podium-position.first {
+    order: 1;
+  }
+
+  .podium-position.second {
+    order: 2;
+  }
+
+  .podium-position.third {
+    order: 3;
   }
 
   .podium-position {

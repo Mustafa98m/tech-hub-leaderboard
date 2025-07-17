@@ -33,20 +33,6 @@ const Leaderboard = () => {
       </div>
 
       <div className='podium'>
-        {/* Second Place */}
-        <div className='podium-position second'>
-          <div className='podium-card'>
-            <div className='rank-badge silver'>
-              <span className='rank-number'>2</span>
-            </div>
-            <div className='leader-info'>
-              <h3>{leaders[1].name}</h3>
-              {/* <p className='problems-count'>{leaders[1].problems} Points</p> */}
-            </div>
-            <div className='medal'>{leaders[1].medal}</div>
-          </div>
-        </div>
-
         {/* First Place */}
         <div className='podium-position first'>
           <div className='podium-card winner'>
@@ -59,6 +45,20 @@ const Leaderboard = () => {
               {/* <p className='problems-count'>{leaders[0].problems} problems</p> */}
             </div>
             <div className='medal'>{leaders[0].medal}</div>
+          </div>
+        </div>
+
+        {/* Second Place */}
+        <div className='podium-position second'>
+          <div className='podium-card'>
+            <div className='rank-badge silver'>
+              <span className='rank-number'>2</span>
+            </div>
+            <div className='leader-info'>
+              <h3>{leaders[1].name}</h3>
+              {/* <p className='problems-count'>{leaders[1].problems} Points</p> */}
+            </div>
+            <div className='medal'>{leaders[1].medal}</div>
           </div>
         </div>
 
